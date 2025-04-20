@@ -1,19 +1,21 @@
-import Footer from "@/components/Footer/Footer";
+"use client";
 import Header from "@/components/Header/Header";
-import { FC, ReactNode } from "react"
+import Footer from "@/components/Footer/Footer";
+import { FC, ReactNode } from "react";
 
 interface IProps {
   children: ReactNode;
 }
 
 const MainLayout: FC<IProps> = ({ children }) => {
+
   return (
     <>
       <Header />
       <main>{children}</main>
       <Footer />
     </>
-  )
+  );
 }
 
 export default MainLayout

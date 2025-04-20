@@ -1,21 +1,17 @@
-import type { Config } from "tailwindcss";
-import defaultTheme from "tailwindcss/defaultTheme";
-
-const config: Config = {
-  darkMode: "class",
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}", // Adjust path based on your project structure
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ["var(--font-sans)", ...defaultTheme.fontFamily.sans],
+      borderColor: {
+        border: 'var(--color-border)', // Enables `border-border`
+      },
+      outlineColor: {
+        ring: 'var(--ring)', // Enables `outline-ring`
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [],
 };
-
-export default config;
