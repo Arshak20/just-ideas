@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <MainLayout>
       <Button>Click me</Button>
-      <div></div>
+      <div className="w-20 h-20 bg-cf-black"></div>
     </MainLayout>
   )
 }
