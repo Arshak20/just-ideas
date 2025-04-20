@@ -1,15 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,ts,jsx,tsx,mdx}", // Adjust path based on your project structure
+    "./src/**/*.{js,ts,jsx,tsx,mdx}", 
   ],
   theme: {
     extend: {
       borderColor: {
-        border: 'var(--color-border)', // Enables `border-border`
+        border: 'var(--color-border)', 
       },
       outlineColor: {
-        ring: 'var(--ring)', // Enables `outline-ring`
+        ring: 'var(--ring)', 
       },
     },
   },
